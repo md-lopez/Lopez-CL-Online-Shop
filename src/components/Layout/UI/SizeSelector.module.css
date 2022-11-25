@@ -1,0 +1,126 @@
+.wrapper{
+    display: flex;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 250px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height:min-content;
+   
+
+}
+
+p {
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.desc {
+    color: black;
+    font-size: 10px;
+    margin: 35px 10px;
+}
+
+.break{
+    flex-basis: 100%;
+    height: 15px;
+
+}
+
+.XSButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    margin: 5px;
+    font-size: 10px;
+}
+
+.XSButton:hover {
+    border: 0.5px solid black;
+}
+
+
+.SButton{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    margin: 5px;
+    font-size: 10px;
+}
+
+.SButton:hover {
+    border: 0.5px solid black;
+}
+
+.MButton{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    margin: 5px;
+    font-size: 10px;
+}
+
+.MButton:hover {
+    border: 0.5px solid black;
+}
+
+.MLButton{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    margin: 5px;
+    font-size: 10px;
+}
+
+.MLButton:hover {
+    border: 0.5px solid black;
+}
+
+
+.LButton{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    margin: 5px;
+    font-size: 10px;
+}
+
+.LButton:hover {
+    border: 0.5px solid black;
+}
+
+.XLButton{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    margin: 5px;
+    font-size: 10px;
+}
+
+.XLButton:hover {
+    border: 0.5px solid black;
+}
+
+.XXLButton{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    margin: 5px;
+    font-size: 10px;
+}
+
+.XXLButton:hover {
+    border: 0.5px solid black;
+}
+

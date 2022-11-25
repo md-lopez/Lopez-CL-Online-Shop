@@ -1,0 +1,53 @@
+.wrapper {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    flex-direction: row;
+    z-index: 30;
+    
+    
+}
+
+.sidebar{
+    display: flex;
+    position: fixed;
+    height: 100%;
+    width: 435px;
+    
+}
+
+
+.content{
+    color: white;
+    background-color: rgba(27,26,32,255);
+    height: 100%;
+    width: 100%;
+    animation: slide-down 300ms ease-out forwards;
+}
+
+.button--alt {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    margin-right: 435px;
+    background-color: rgba(27,26,32,255);
+    color: white;
+    border: none;
+    animation: slide-down 300ms ease-out forwards;
+}
+
+.button--alt:hover {
+    color: rgb(186, 186, 186);
+}
+
+
+@keyframes slide-down {
+    from {
+
+      transform: translateX(80rem);
+    }
+    to {
+
+      transform: translateY(0);
+    }
+  }
