@@ -3,17 +3,40 @@
     flex-wrap: wrap;
     width: 220px;
     height: 520px;
-    border: 1px solid red;
-    margin: 1rem;
+    margin: 1rem 0.7rem 2rem;
     text-align: center;
     flex-direction: column;
+
+}
+
+.shipping {
+    font-family:Arial;
+    position: absolute;
+    margin-left: 147px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    font-size: 10px;
+    height: 20px;
+    width: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
 }
 
 .name {
-    padding: 0 25px 0 25px;
+    padding: 0 27px 0 27px;
     font-size: 14px;
     font-weight: 100;
-    border: 1px solid red;
+}
+
+.line {
+    width: 20px;
+    position: absolute;
+    transform: translate(100px, 372px);
+    border-top: 2px solid #eabf00;
+
+
 }
 
 .Img{
@@ -22,28 +45,33 @@
 }
 
 .btn {
-    border: 1px solid red;
     color: white;
-    background-color: black;
+    background-color: rgb(29, 29, 29);
     width: 100%;
     height: 50px;
 }
 
 .btnHover {
     transition: 0.3s;
-    border: 1px solid red;
     color: white;
     background-color: #eabf00;
     width: 100%;
     height: 50px;
+    border: none;
 }
-
-
-
-
 
 
 .price {
     justify-items: flex-end;
-    margin-top: auto;
+    margin-top: auto;   
+}
+
+.price .priceText {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.price span {
+    font-weight: 100;
+    font-size: 12px;
 }

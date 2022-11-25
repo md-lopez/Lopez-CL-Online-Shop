@@ -28,9 +28,9 @@ const ClothesItemForm = (props) => {
   const styles = props.className;
   return (
     <form className={classes.form} onSubmit={SubmitHandler}>
+      <div className={classes.inp}>
       <Input
         ref={amountInputRef}
-        label="Amount"
         input={{
           id: "amount",
           type: "number",
@@ -40,6 +40,7 @@ const ClothesItemForm = (props) => {
           defaultValue: "1",
         }}
       />
+      </div>
       <div className={classes.wrapper}>
         <button className={styles}>{props.children}</button>
       </div>

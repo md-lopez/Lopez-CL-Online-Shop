@@ -1,24 +1,43 @@
-import { useContext } from 'react';
+import { useContext } from "react";
 
 import React, { useState } from "react";
 import classes from "./ClothesItem.module.css";
 import ClothesItemForm from "./ClothesItemForm";
-import CartContext from '../../../store/cart-context';
+import CartContext from "../../../store/cart-context";
 
 //use context here
 const ClothesItem = (props) => {
   const cartCtx = useContext(CartContext);
 
-  const price = `P${props.price.toFixed(2)}`;
+  let price = props.price.toFixed(0);
+  let dec = ((props.price.toFixed(2) % 1) * 100).toFixed(0);
 
-  const addToCartHandler = amount => {
+  if (dec <= 0) {
+    dec = <span>00</span>;
+  }
+
+  if (dec <= 9) {
+    dec = <span>0{dec}</span>;
+  }
+  if (dec >= 50) {
+    price = price - 1;
+  }
+
+  let ship = '';
+
+  if (props.shipping === true) {
+    ship = <span className={classes.shipping}>Free shipping</span>
+  }
+
+  const addToCartHandler = (amount) => {
     cartCtx.addItem({
-        id: props.id,
-        name: props.name,
-        amount: amount,
-        price: props.price,
-        style: props.style,
-        cartImg: props.cartImg
+      id: props.id,
+      name: props.name,
+      amount: amount,
+      price: props.price,
+      style: props.style,
+      cartImg: props.cartImg,
+      shipping: props.shipping
     });
   };
 
@@ -45,17 +64,21 @@ const ClothesItem = (props) => {
         onMouseEnter={mouseEnterHandler}
         onMouseLeave={mouseOutHandler}
       >
+        {ship}
         {img}
         <h3 className={classes.name}>{props.name}</h3>
+        <span className={classes.line}></span>
         <div className={classes.price}>
-          {price}
+          <span>P &nbsp;</span> <span className={classes.priceText}>{price}</span>
+          <span>.{dec}</span>
+          </div>
           <ClothesItemForm
             className={classes[`${!isHovering ? "btn" : "btnHover"}`]}
             onAddToCart={addToCartHandler}
           >
             Add to cart
           </ClothesItemForm>
-        </div>
+        
       </li>
     </div>
   );
