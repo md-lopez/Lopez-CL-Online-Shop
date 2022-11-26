@@ -2,7 +2,6 @@ import { useState } from "react";
 import Header from "./components/Layout/Header";
 import Body from "./components/Layout/Body";
 import Cart from "./components/Cart/Cart";
-import classes from './App.module.css'
 import CartProvider from "./store/CartProvider";
 
 function App() {

@@ -5,7 +5,6 @@ import classes from "./Sidebar.module.css";
 
 const SidebarOverlay = (props) => {
 
-{/* <div className={classes[`${!isOpen ? 'sidebar' : 'open'}`]} */}
 
   return (
     <div className={classes.wrapper}>

@@ -76,7 +76,7 @@ const ClothesItem = (props) => {
             className={classes[`${!isHovering ? "btn" : "btnHover"}`]}
             onAddToCart={addToCartHandler}
           >
-            Add to carts
+            Add to cart
           </ClothesItemForm>
         
       </li>
