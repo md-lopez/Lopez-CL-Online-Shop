@@ -1,8 +1,15 @@
 .header {
     display: flex;
-    padding-left: 300px;
+}
+
+.logo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 h1 {
-    margin: 0px;
+    width: 1250px;
+    margin-left: 50px;
 }
+

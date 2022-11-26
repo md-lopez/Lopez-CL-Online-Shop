@@ -3,3 +3,11 @@
     justify-content: center;
     margin-top: 3px;
 }
+
+@media (max-width: 1199px) {
+    .wrapper {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+}

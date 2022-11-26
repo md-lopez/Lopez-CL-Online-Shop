@@ -9,14 +9,23 @@
     flex-direction: row;
     flex-wrap: wrap;
     height:min-content;
-   
 
 }
 
-p {
+@media (max-width: 1199px) {
+    .wrapper {
+        width: 500px;
+        justify-content: center;
+        height: 175px;
+    }
+}
+
+.wrapper p {
     color: black;
     font-weight: 700;
     font-size: 15px;
+    justify-content: flex-start;
+    
 }
 
 .desc {
@@ -25,10 +34,33 @@ p {
     margin: 35px 10px;
 }
 
-.break{
+@media (max-width: 1199px) {
+    .desc {
+        margin: 10px 10px;
+    }
+}
+
+/* Breaks */
+
+.break1{
     flex-basis: 100%;
     height: 15px;
+}
 
+.break2{
+    flex-basis: 100%;
+    height: 15px;
+}
+
+@media (max-width: 1199px) {
+    .break1 {
+        height: 0px;
+    }
+
+    .break2 {
+        flex-basis: 0;
+        height: 0px;
+    }
 }
 
 .XSButton {

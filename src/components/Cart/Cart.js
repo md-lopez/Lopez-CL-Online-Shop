@@ -10,9 +10,13 @@ const Cart = (props) => {
   const totalAmount = `${cartCtx.totalAmount.toFixed(2)}`;
   const hasItems = cartCtx.items.length > 0;
 
-  const cartItemRemoveHandler = (id) => {};
+  const cartItemRemoveHandler = (id) => {
+    cartCtx.removeItem(id);
+  };
 
-  const cartItemAddHandler = (item) => {};
+  const cartItemAddHandler = (item) => {
+    cartCtx.addItem({...item, amount: 1});
+  };
 
   const cartItems = (
     <ul className={classes["cart-items"]}>
@@ -34,16 +38,16 @@ const Cart = (props) => {
   return (
     <Sidebar onClick={props.onClose}>
       <div className={classes.wrapper}>
-        <div className={classes["upper--content"]}>{cartItems}</div>
+        <div className={classes["upper--content"]}>{cartItems}
+        {!hasItems && (<span className={classes.addProductText}>Add some products in the cart.</span>)}
+        </div>
         <div className={classes["bottom--content"]}>
           <div className={classes.total}>
             <span className={classes["subtotal--word"]}>SUBTOTAL</span>
             <span className={classes["total--price"]}>P {totalAmount}</span>
           </div>
           <div className={classes.actions}>
-            {hasItems && (
               <button className={classes["checkout--button"]}>CHECKOUT</button>
-            )}
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@
     height: 50px;
     width: 50px;
     position: fixed;
+    z-index: 2;
     right: 0;
     background-color: rgb(41, 41, 41);
     font-size: 12px;

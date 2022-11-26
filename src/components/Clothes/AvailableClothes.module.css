@@ -1,13 +1,29 @@
 .wrapper {
+    display: flex;
     width: 1100px;
     margin-top: 37px;
 }
 
+@media (max-width: 1199px) {
+    .wrapper {
+        width: 100%;
+        margin-top: 0px;
+    }
+
+    .clothes {
+        justify-content: space-evenly;
+    }
+}
+
+/* dito yung flex control ng per item */
 .clothes {
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding-right: 40px;
 }
+
+
 
 .productCount {
     font-size: 14px;

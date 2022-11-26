@@ -6,6 +6,13 @@
     
 }
 
+.addProductText {
+    font-family: Arial;
+    display: flex;
+    margin-left: 14%;
+    align-items: center;
+    
+}
 
 .upper--content {
     display: flex;

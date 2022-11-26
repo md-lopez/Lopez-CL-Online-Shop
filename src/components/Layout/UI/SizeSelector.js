@@ -7,12 +7,12 @@ const SizeSelector = () => {
     
     <div className={classes.wrapper}>
     <p>Sizes:</p>
-    <div className={classes.break}></div>
+    <div className={classes.break1}></div>
     <button className={classes.XSButton}>XS</button>
     <button className={classes.SButton}>S</button>
     <button className={classes.MButton}>M</button>
     <button className={classes.MLButton}>ML</button>
-    <div className={classes.break}></div>
+    <div className={classes.break2}></div>
     <button className={classes.LButton}>L</button>
     <button className={classes.XLButton}>XL</button>
     <button className={classes.XXLButton}>XXL</button>
